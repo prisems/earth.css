@@ -1,0 +1,348 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+  --background-primary-color: #18181a;
+  --dark-stone: #292929;
+  --stone: #b8b8b8;
+  --white: white;
+  --foreground-tertiary-color: orange;
+  --molten: orange;
+  --lava: #ff4405;
+  --ice: skyblue;
+  --thick-ice: cadetblue;
+  --water: cadetblue;
+  --clear-water: #4494BA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: var(--background-primary-color);
+}
+
+textarea {
+  font-family: var(--font-family);
+  background-color: var(--background-primary-color);
+  color: var(--stone);
+  border: none;
+  outline: 1.5px solid var(--dark-stone);
+  max-width: 100%;
+  height: 200px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 15px 0;
+  line-height: 30px;
+  transition: 0.15s;
+}
+
+input[type="text"], input[type="url"], input[type="number"], input[type="email"], input[type="password"], inpuy[type="time"], input[type="date"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="search"], input[type="tel"] {
+  font-family: var(--font-family);
+  background-color: var(--background-primary-color);
+  color: var(--stone);
+  border: none;
+  outline: 1.5px solid var(--dark-stone);
+  max-width: 450px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: 0.15s;
+}
+
+.alert {
+  background: linear-gradient(90deg, var(--accent-primary-color), var(--accent-secondary-color));
+  color: var(--foreground-secondary-color);
+  font-size: 18px;
+  padding: 15px 12.5px;
+  border-radius: 10px;
+}
+
+a:hover {
+ .lava {
+   color: var(--water);
+ }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--stone);
+}
+
+code, pre, .code {
+  background-color: var(--dark-stone);
+  color: var(--stone);
+  font-size: 17px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+
+#head {
+  background-color: var(--background-primary-color);
+  opacity: 0.75;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.rounded-lg {
+  border-radius: 30px;
+}
+
+.lava {
+  color: var(--molten);
+  text-shadow: 3px 1px 15px var(--lava);
+}
+
+.stone, p, p1, p2, p3, p4, p6, h, h1, h2, h3, h4, h5, fieldset, legend {
+  color: var(--stone);
+  text-shadow: 3px 1px 15px var(--dark-stone);
+}
+
+.size-1 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+}
+
+.ice {
+  color: var(--ice);
+  text-shadow: 3px 1px 15px var(--thick-ice);
+}
+
+.water {
+  color: var(--water);
+  text-shadow: 3px 1px 15px var(--clear-water);
+}
+
+.btn-water:hover {
+  box-shadow: 3px 1px 15px var(--clear-water);
+}
+
+.btn-ice:hover {
+  box-shadow: 3px 1px 15px var(--thick-ice);
+}
+
+.btn-lava:hover {
+  box-shadow: 3px 1px 15px var(--molten);
+}
+
+.bdg {
+  background: linear-gradient(90deg, #339FFF, #45A7FF);
+  color: var(--white);
+  font-size: 7pt;
+  text-align: center;
+  padding: 1px 3px;
+  margin-left: 1px;
+  margin-top: 25px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.btn-water {
+  font-family: var(--font-family);
+  background: linear-gradient(90deg, var(--water), var(--clear-water));
+  color: var(--white);
+  border: none;
+  font-size: 20px;
+  min-width: 150px;
+  max-width: 300px;
+  height: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-lava {
+  font-family: var(--font-family);
+  background: linear-gradient(90deg, var(--lava), var(--molten));
+  color: var(--white);
+  border: none;
+  font-size: 20px;
+  min-width: 150px;
+  max-width: 300px;
+  height: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-ice {
+  font-family: var(--font-family);
+  background: linear-gradient(90deg, var(--ice), var(--thick-ice));
+  color: var(--white);
+  border: none;
+  font-size: 20px;
+  min-width: 150px;
+  max-width: 300px;
+  height: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+h1, .size-1 {
+	font-size: 45px;
+}
+
+h2, .size-2 {
+	font-size: 35px;
+  font-weight: bold;
+}
+
+h3, .size-3 {
+	font-size: 30px;
+}
+
+h4, .size-4 {
+	font-size: 25px;
+}
+
+h5, .size-5 {
+	font-size: 20px;
+}
+
+h6, .size-6{
+	font-size: 17px;
+}
+
+fieldset {
+  border: 1px solid var(--stone);
+}
+
+.center {
+  text-align: center;
+}
+
+.btn-sec-lava {
+  background: var(--background-primary-color);
+  color: var(--molten);
+  font-size: 20px;
+  min-width: 150px;
+  max-width: 300px;
+  height: 50px;
+  border: 2px solid var(--molten);
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: 0.15s, border 0s;
+}
+
+.btn-sec-ice {
+  background: var(--background-primary-color);
+  color: var(--ice);
+  font-size: 20px;
+  min-width: 150px;
+  max-width: 300px;
+  height: 50px;
+  border: 2px solid var(--ice);
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: 0.15s, border 0s;
+}
+
+.btn-sec-water {
+  background: var(--background-primary-color);
+  color: var(--water);
+  font-size: 20px;
+  min-width: 150px;
+  max-width: 300px;
+  height: 50px;
+  border: 2px solid var(--water);
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: 0.15s, border 0s;
+}
+
+.pln-ice {
+  color: var(--ice);
+}
+
+.pln-water {
+  color: var(--water);
+}
+
+.pln-lava {
+  color: var(--lava);
+}
+
+.btn-sec-lava:hover {
+  background: linear-gradient(90deg, var(--lava), var(--molten));
+  color: var(--white);
+  box-shadow: 3px 1px 15px var(--molten);
+  border: none;
+}
+
+.btn-sec-ice:hover {
+  background: linear-gradient(90deg, var(--ice), var(--thick-ice));
+  color: var(--white);
+  box-shadow: 3px 1px 15px var(--thick-ice);
+  border: none;
+}
+
+.btn-sec-water:hover {
+  background: linear-gradient(90deg, var(--water), var(--clear-water));
+  color: var(--white);
+  box-shadow: 3px 1px 15px var(--clear-water);
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  opacity: 0.75;
+}
+
+.dropdown-content:hover {
+  background-color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--stone);
+  opacity: 0.5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
